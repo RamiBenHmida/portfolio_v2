@@ -39,7 +39,7 @@ export const HeroSection = () => {
 
         {/* Location & Experience */}
         <p className="text-muted-foreground mb-10 opacity-0 animate-fade-up stagger-3">
-          📍 Germany • 10+ Year of Experience
+          📍 Germany • 1+ Year of Experience
         </p>
 
         {/* CTA Buttons */}
