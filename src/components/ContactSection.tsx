@@ -100,7 +100,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">rami@example.com</p>
+                    <p className="font-medium">ben.hmida.rami@outlook.com</p>
                   </div>
                 </a>
                 
@@ -113,7 +113,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+49 123 456 7890</p>
+                    <p className="font-medium">+49 162 629 9502</p>
                   </div>
                 </a>
                 

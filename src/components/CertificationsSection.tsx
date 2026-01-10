@@ -11,23 +11,23 @@ interface Certification {
 const certifications: Certification[] = [
   {
     id: "1",
-    name: "AWS Certified Solutions Architect",
+    name: "AWS Certified Machine Learning Engineer Associate",
     issuer: "Amazon Web Services",
-    date: "2024",
-    credentialUrl: "#"
+    date: "2025",
+    credentialUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/b82252db49404e7492a11ceae6237d5d"
   },
   {
     id: "2",
-    name: "Azure Data Engineer Associate",
-    issuer: "Microsoft",
-    date: "2024",
-    credentialUrl: "#"
+    name: "AWS Certified Cloud Practitioner ",
+    issuer: "Amazon Web Services",
+    date: "2025",
+    credentialUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/0847b451a01f431da0694c253663005f"
   },
   {
     id: "3",
-    name: "TensorFlow Developer Certificate",
-    issuer: "Google",
-    date: "2023",
+    name: "Telc C1 Certificate",
+    issuer: "F+U Academy of Languages",
+    date: "2019",
     credentialUrl: "#"
   },
   {
