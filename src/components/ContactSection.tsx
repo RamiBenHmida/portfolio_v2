@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Mail, Phone, MapPin, Send, Linkedin, Github, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const countryCodes = [
   { code: "+49", country: "Germany", flag: "🇩🇪" },
@@ -54,19 +55,28 @@ export const ContactSection = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    
-    // Simulate API call - replace with actual backend when Cloud is enabled
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log("Form submitted:", data);
-    
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
+
+    try {
+      await emailjs.send(
+        "service_ramibenhmida_web", // Your service ID
+        "template_rami_web",        // Your template ID
+        {
+          from_name: data.name,
+          from_email: data.email,
+          phone: data.countryCode + data.phone,
+          message: data.message,
+        },
+        "QOvMZLqk5PJGQLR8C"         // Your public key
+      );
+
+      toast({ title: "Message sent successfully!" });
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast({ title: "Failed to send message", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -92,7 +102,7 @@ export const ContactSection = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:rami@example.com" 
+                  href="mailto:ben.hmida.rami@outlook.com" 
                   className="flex items-center gap-4 p-3 rounded-xl hover:bg-secondary/50 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -105,7 +115,7 @@ export const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="tel:+491234567890" 
+                  href="tel:+491626299502" 
                   className="flex items-center gap-4 p-3 rounded-xl hover:bg-secondary/50 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
