@@ -35,14 +35,21 @@ const certifications: Certification[] = [
     name: "Python – Advanced",
     issuer: "365DataScience",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://learn.365datascience.com/c/80fc647e0e/"
   },
   {
     id: "5",
     name: "SQL – Advanced",
     issuer: "365DataScience",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://learn.365datascience.com/c/b770b7751d/"
+  },
+  {
+    id: "5",
+    name: "Power BI",
+    issuer: "365DataScience",
+    date: "2024",
+    credentialUrl: "https://learn.365datascience.com/c/41a4c5cd70/"
   }
 ];
 
