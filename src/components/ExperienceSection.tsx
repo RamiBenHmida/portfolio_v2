@@ -19,68 +19,77 @@ const experiences: Experience[] = [
   {
     id: "1",
     type: "professional",
-    title: "Data Engineer",
-    company: "Tech Company GmbH",
-    location: "Berlin, Germany",
-    period: "2024 - Present",
-    description: "Building scalable data pipelines and ML infrastructure for enterprise clients.",
+    title: "Machine Learning Engineer",
+    company: "Technical University of Dortmund",
+    location: "Dortmund, Germany",
+    period: "08/2024 – 07/2025",
+    description:
+      "Developed and optimized deep learning models for ship detection and classification as part of academic research.",
     details: [
-      "Designed and implemented ETL pipelines processing 10TB+ daily",
-      "Built real-time analytics dashboard using Spark Streaming",
-      "Deployed ML models to production with 99.9% uptime",
-      "Collaborated with cross-functional teams across 3 time zones"
+      "Developed a deep learning model for ship detection and classification achieving over 90% accuracy",
+      "Evaluated model performance using precision, recall, F1-score, and confusion matrix to avoid misleading accuracy",
+      "Used C++ multithreading to speed up image preprocessing and handle large datasets efficiently",
+      "Built a web scraper to grow the dataset to over 5,000 images, improving model accuracy by 20%",
+      "Optimized a YOLO-based segmentation model through hyperparameter tuning and data augmentation, reducing error rate by 25%"
     ],
-    technologies: ["Python", "Spark", "AWS", "Databricks", "Docker"]
+    technologies: [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "OpenCV",
+      "C++",
+      "Docker",
+      "Git"
+    ]
   },
   {
     id: "2",
-    type: "professional",
-    title: "Junior ML Engineer",
-    company: "AI Startup",
-    location: "Munich, Germany",
-    period: "2023 - 2024",
-    description: "Developed machine learning models for predictive analytics.",
+    type: "freelance",
+    title: "Anomaly Detection Platform",
+    company: "Personal Project",
+    location: "Remote",
+    period: "2025",
+    description:
+      "Built a full-stack anomaly detection platform with real-time monitoring and ML-powered alerts.",
     details: [
-      "Trained and optimized NLP models for text classification",
-      "Reduced model inference time by 40%",
-      "Created automated model retraining pipelines",
-      "Documented ML workflows and best practices"
+      "Developed a full-stack web application for presence anomaly detection using Isolation Forest",
+      "Exposed the ML model via REST APIs and integrated it with a real-time React dashboard",
+      "Enabled real-time monitoring and anomaly alerts through backend services",
+      "Containerized services and automated deployments using Docker and Docker Compose"
     ],
-    technologies: ["PyTorch", "TensorFlow", "Python", "Azure", "MLflow"]
+    technologies: [
+      "Python",
+      "scikit-learn",
+      "React",
+      "Laravel",
+      "Docker",
+      "Git"
+    ]
   },
   {
     id: "3",
-    type: "freelance",
-    title: "Full Stack Developer",
-    company: "E-commerce Client",
-    location: "Remote",
-    period: "2024",
-    description: "Built a complete e-commerce platform from scratch.",
+    type: "professional",
+    title: "Real-time Acoustic Signal Detection",
+    company: "Technical University of Dortmund",
+    location: "Dortmund, Germany",
+    period: "01/2024 – 06/2024",
+    description:
+      "Bachelor thesis focused on real-time acoustic signal detection and classification for maritime safety.",
     details: [
-      "Developed responsive frontend with React and Next.js",
-      "Implemented secure payment integration with Stripe",
-      "Built RESTful API with Node.js and PostgreSQL",
-      "Achieved 95+ Lighthouse performance score"
+      "Built a real-time ship acoustic signal detection and classification system",
+      "Applied noise reduction techniques and FFT for signal processing",
+      "Simulated intention recognition to improve maritime communication and safety",
+      "Achieved a final thesis grade of 1.0"
     ],
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "Stripe"]
-  },
-  {
-    id: "4",
-    type: "freelance",
-    title: "Data Analytics Dashboard",
-    company: "Marketing Agency",
-    location: "Remote",
-    period: "2023",
-    description: "Created interactive analytics dashboard for marketing insights.",
-    details: [
-      "Integrated multiple data sources (Google Analytics, social media APIs)",
-      "Built real-time visualization with D3.js and Chart.js",
-      "Implemented automated reporting system",
-      "Reduced manual reporting time by 80%"
-    ],
-    technologies: ["Python", "React", "D3.js", "MongoDB", "Docker"]
+    technologies: [
+      "Python",
+      "Signal Processing",
+      "FFT",
+      "Machine Learning"
+    ]
   }
 ];
+
 
 export const ExperienceSection = () => {
   const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);

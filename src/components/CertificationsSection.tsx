@@ -29,20 +29,6 @@ const certifications: Certification[] = [
     issuer: "F+U Academy of Languages",
     date: "2019",
     credentialUrl: "#"
-  },
-  {
-    id: "4",
-    name: "Databricks Certified Data Engineer",
-    issuer: "Databricks",
-    date: "2023",
-    credentialUrl: "#"
-  },
-  {
-    id: "5",
-    name: "Professional Scrum Master I",
-    issuer: "Scrum.org",
-    date: "2023",
-    credentialUrl: "#"
   }
 ];
 
