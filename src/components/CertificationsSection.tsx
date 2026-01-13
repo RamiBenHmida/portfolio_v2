@@ -29,6 +29,20 @@ const certifications: Certification[] = [
     issuer: "F+U Academy of Languages",
     date: "2019",
     credentialUrl: "#"
+  },
+  {
+    id: "4",
+    name: "Python – Advanced",
+    issuer: "365DataScience",
+    date: "2024",
+    credentialUrl: "#"
+  },
+  {
+    id: "5",
+    name: "SQL – Advanced",
+    issuer: "365DataScience",
+    date: "2024",
+    credentialUrl: "#"
   }
 ];
 
