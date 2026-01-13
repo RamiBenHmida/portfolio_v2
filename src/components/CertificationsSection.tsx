@@ -45,7 +45,7 @@ const certifications: Certification[] = [
     credentialUrl: "https://learn.365datascience.com/c/b770b7751d/"
   },
   {
-    id: "5",
+    id: "6",
     name: "Power BI",
     issuer: "365DataScience",
     date: "2024",
