@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Briefcase, ArrowDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const HeroSection = () => {
   return (
@@ -56,12 +62,37 @@ export const HeroSection = () => {
               Contact Me
             </a>
           </Button>
-          <Button variant="outline" size="xl" asChild>
-            <a href="/RamiBenHmida-CV.pdf" download>
-              <Download className="w-5 h-5" />
-              Download Resume
-            </a>
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="xl">
+                <Download className="w-5 h-5" />
+                  Download Resume
+              </Button>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent align="center" className="w-48">
+              <DropdownMenuItem asChild>
+                <a
+                  href="/RamiBenHmida-CV-EN.pdf"
+                    download
+                      className="w-full cursor-pointer"
+                >
+                  🇬🇧 English Version
+                </a>
+              </DropdownMenuItem>
+
+            <DropdownMenuItem asChild>
+              <a
+                href="/RamiBenHmida-CV-DE.pdf"
+                  download
+                    className="w-full cursor-pointer"
+              >
+                🇩🇪 Deutsche Version
+              </a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
         </div>
 
         {/* Scroll Indicator */}
